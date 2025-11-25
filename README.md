@@ -1,4 +1,4 @@
-# 🚀 Plataforma de Gerenciamento de Usuários
+# 🚀 Forge Plataforma de Gerenciamento de Usuários
 
 Uma aplicação completa de gerenciamento de usuários desenvolvida com tecnologias modernas. O projeto consiste em um frontend responsivo com React + TypeScript + Vite e um backend robusto com NestJS/Express + TypeScript.
 
@@ -53,7 +53,7 @@ Este projeto é uma solução moderna para gerenciamento de usuários que foi co
 ```
 .
 ├── frontend/          # Aplicação React com Vite
-├── backend/          # API Express com TypeScript
+├── server/          # API Express com TypeScript
 ├── README.md         # Este arquivo
 └── .gitignore
 ```
@@ -71,8 +71,8 @@ Ambos os projetos estão no mesmo repositório GitHub para facilitar o controle 
 ### Clone o Repositório
 
 ```bash
-git clone <seu-repositorio-github>
-cd seu-repositorio
+git clone https://github.com/Aureo-Bueno/forge-user-management-platform
+cd forge-user-management-platform
 ```
 
 ### Frontend - Instalação
@@ -87,7 +87,7 @@ yarn install
 ### Backend - Instalação
 
 ```bash
-cd backend
+cd server
 npm install
 # ou
 yarn install
@@ -103,7 +103,7 @@ O backend inicia em `http://localhost:3000` por padrão.
 
 **Modo Desenvolvimento** (com reload automático):
 ```bash
-cd backend
+cd server
 npm run server
 # ou
 yarn server
@@ -111,7 +111,7 @@ yarn server
 
 **Build para Produção:**
 ```bash
-cd backend
+cd server
 npm run build
 # ou
 yarn build
@@ -119,7 +119,7 @@ yarn build
 
 **Iniciar Servidor de Produção:**
 ```bash
-cd backend
+cd server
 npm start
 # ou
 yarn start
@@ -406,7 +406,7 @@ npm run build
 ### Backend (Heroku, Render, Railway)
 
 ```bash
-cd backend
+cd server
 npm run build
 npm start
 ```
