@@ -1,0 +1,252 @@
+.view-container {
+  max-width: var(--container-md);
+  margin: var(--space-32) auto;
+  padding: var(--space-20);
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--color-card-border);
+}
+
+/* Loading State */
+.view-loading {
+  text-align: center;
+  padding: var(--space-32) var(--space-20);
+  color: var(--color-text-secondary);
+}
+
+.view-loading h2 {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-semibold);
+  margin: 0;
+  color: var(--color-text);
+}
+
+/* User Details Section */
+.user-details {
+  padding: var(--space-20);
+}
+
+.user-details h2 {
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+  margin-bottom: var(--space-24);
+  border-bottom: 2px solid var(--color-primary);
+  padding-bottom: var(--space-16);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+/* User Info Items */
+.user-info-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--space-20);
+  padding: var(--space-16);
+  background-color: var(--color-secondary);
+  border-left: 3px solid var(--color-primary);
+  border-radius: var(--radius-base);
+  transition: all var(--duration-normal) var(--ease-standard);
+}
+
+.user-info-item:hover {
+  background-color: var(--color-secondary-hover);
+  box-shadow: var(--shadow-sm);
+}
+
+.user-info-item strong {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: var(--space-8);
+  font-weight: var(--font-weight-semibold);
+}
+
+.user-info-item p {
+  color: var(--color-text);
+  font-size: var(--font-size-lg);
+  margin: 0;
+  font-weight: var(--font-weight-medium);
+}
+
+/* Action Buttons */
+.view-actions {
+  display: flex;
+  gap: var(--space-12);
+  margin-top: var(--space-24);
+  padding-top: var(--space-20);
+  border-top: 1px solid var(--color-border);
+}
+
+.btn-view {
+  padding: var(--space-10) var(--space-20);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  border: none;
+  border-radius: var(--radius-base);
+  cursor: pointer;
+  transition: all var(--duration-normal) var(--ease-standard);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-view:focus-visible {
+  outline: var(--focus-outline);
+  box-shadow: var(--focus-ring);
+}
+
+.btn-edit {
+  background-color: var(--color-primary);
+  color: var(--color-btn-primary-text);
+}
+
+.btn-edit:hover {
+  background-color: var(--color-primary-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-edit:active {
+  background-color: var(--color-primary-active);
+  transform: translateY(0);
+}
+
+.btn-back {
+  background-color: var(--color-secondary);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+}
+
+.btn-back:hover {
+  background-color: var(--color-secondary-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-back:active {
+  background-color: var(--color-secondary-active);
+  transform: translateY(0);
+}
+
+.btn-delete {
+  background-color: var(--color-error);
+  color: var(--color-white);
+}
+
+.btn-delete:hover {
+  background-color: rgba(var(--color-error-rgb), 0.85);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-delete:active {
+  background-color: rgba(var(--color-error-rgb), 0.75);
+  transform: translateY(0);
+}
+
+/* Error State */
+.view-error {
+  text-align: center;
+  padding: var(--space-32) var(--space-20);
+  color: var(--color-error);
+  background-color: rgba(var(--color-error-rgb), var(--status-bg-opacity));
+  border: 1px solid rgba(var(--color-error-rgb), var(--status-border-opacity));
+  border-radius: var(--radius-base);
+  margin: var(--space-20);
+}
+
+.view-error h3 {
+  margin: 0 0 var(--space-10) 0;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .view-container {
+    margin: var(--space-20);
+    padding: var(--space-16);
+  }
+
+  .user-details {
+    padding: var(--space-16);
+  }
+
+  .user-details h2 {
+    font-size: var(--font-size-3xl);
+  }
+
+  .user-info-item {
+    padding: var(--space-12);
+  }
+
+  .view-actions {
+    flex-direction: column;
+  }
+
+  .btn-view {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .view-container {
+    margin: var(--space-12);
+    padding: var(--space-12);
+  }
+
+  .user-details {
+    padding: var(--space-12);
+  }
+
+  .user-details h2 {
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--space-16);
+    padding-bottom: var(--space-12);
+  }
+
+  .user-info-item {
+    padding: var(--space-10);
+    margin-bottom: var(--space-16);
+  }
+
+  .user-info-item strong {
+    font-size: var(--font-size-xs);
+  }
+
+  .user-info-item p {
+    font-size: var(--font-size-base);
+  }
+
+  .view-loading {
+    padding: var(--space-24) var(--space-16);
+  }
+
+  .view-loading h2 {
+    font-size: var(--font-size-2xl);
+  }
+
+  .view-actions {
+    gap: var(--space-10);
+    margin-top: var(--space-20);
+    padding-top: var(--space-16);
+  }
+
+  .btn-view {
+    padding: var(--space-10) var(--space-16);
+    font-size: var(--font-size-sm);
+  }
+
+  .view-error {
+    padding: var(--space-24) var(--space-16);
+    margin: var(--space-16);
+  }
+
+  .view-error h3 {
+    font-size: var(--font-size-lg);
+  }
+}
