@@ -447,10 +447,10 @@ Este projeto está sob a licença ISC.
 
 ## 👨‍💻 Autor
 
-**Auréo**
+**Aureo**
 
-- GitHub: [@seu-usuario](https://github.com/seu-usuario)
-- LinkedIn: [seu-linkedin](https://linkedin.com/in/seu-usuario)
+- GitHub: [@Aureo-Bueno](https://github.com/Aureo-Bueno)
+- LinkedIn: [Aureo Alexandre](https://www.linkedin.com/in/aureo-alexandre-10b0a31a4/)
 
 ---
 
