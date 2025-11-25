@@ -1,8 +1,10 @@
 import { Header } from "@/components/Header";
 import { JSX } from "react";
 import "./About.css";
+import { useAuth } from "@/hooks/useAuth";
 
 export function About(): JSX.Element {
+  const { user, isAuthenticated } = useAuth();
   return (
     <Header>
       <div className="about-container">
@@ -315,18 +317,20 @@ export function About(): JSX.Element {
           </div>
         </section>
 
-        <section className="about-section about-cta">
-          <div className="about-section-content">
-            <h2>Pronto para usar?</h2>
-            <p>
-              Explore a plataforma de gerenciamento de usuários e veja como a
-              modernização traz eficiência, segurança e escalabilidade.
-            </p>
-            <a href="/home" className="cta-button">
-              Voltar para Home →
-            </a>
-          </div>
-        </section>
+        {user && isAuthenticated && (
+          <section className="about-section about-cta">
+            <div className="about-section-content">
+              <h2>Pronto para usar?</h2>
+              <p>
+                Explore a plataforma de gerenciamento de usuários e veja como a
+                modernização traz eficiência, segurança e escalabilidade.
+              </p>
+              <a href="/home" className="cta-button">
+                Voltar para Home →
+              </a>
+            </div>
+          </section>
+        )}
       </div>
     </Header>
   );
